@@ -1,5 +1,7 @@
 (function() {
-    var IMAGE_BASE_PATH = './img/',
+    var IMAGE_BASE_PATH = './img',
+        IMAGE_BASE_PATH_ORIGINAL = IMAGE_BASE_PATH + '/original',
+        IMAGE_BASE_PATH_RESIZED = IMAGE_BASE_PATH + '/resized',
         data;
 
     function loadData() {
@@ -14,13 +16,15 @@
     }
 
     function loadImageSection( sName ) {
-        function loadImage( sPath, $context ) {
-            $context.append('<a href="' + sPath + '"><img src="' + sPath + '" /></a>');
+        function loadImage( sPath, sPathLink, $context ) {
+            $context.append('<a href="' + sPath + '"><img src="' + sPathLink + '" /></a>');
         }
         var oData = data[sName],
             $context = jQuery('#' + sName + 'Pics');
         oData.forEach(function( o ) {
-            loadImage(IMAGE_BASE_PATH + o.path, $context);
+            var sOriginalPath = IMAGE_BASE_PATH_ORIGINAL + '/' + o.path,
+                sResizedPath = IMAGE_BASE_PATH_RESIZED + '/' + o.path;
+            loadImage(sOriginalPath, sResizedPath, $context);
             $context.append('<div>' + o.description + '</div>');
         });
     }
