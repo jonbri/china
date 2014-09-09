@@ -16,15 +16,17 @@
     }
 
     function loadImageSection( sName ) {
-        function loadImage( sPath, sPathLink, $context ) {
-            $context.append('<a href="' + sPath + '"><img src="' + sPathLink + '" /></a>');
-        }
         var oData = data[sName],
             $context = jQuery('#' + sName + 'Pics');
+
+        function loadImage( sPath, sPathLink ) {
+            $context.append('<a href="' + sPath + '"><img src="' + sPathLink + '" /></a>');
+        }
+
         oData.forEach(function( o ) {
             var sOriginalPath = IMAGE_BASE_PATH_ORIGINAL + '/' + o.path,
                 sResizedPath = IMAGE_BASE_PATH_RESIZED + '/' + o.path;
-            loadImage(sOriginalPath, sResizedPath, $context);
+            loadImage(sOriginalPath, sResizedPath);
             $context.append('<div>' + o.description + '</div>');
         });
     }
@@ -32,7 +34,9 @@
     // EXECUTION STARTS HERE
     $(document).ready(function() {
         loadData();
-        loadImageSection('intro');
+        setTimeout(function() {
+            loadImageSection('intro');
+        }, 2000);
         setTimeout(function() {
             loadImageSection('hongKong');
         }, 500);
