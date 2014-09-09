@@ -1,15 +1,18 @@
 {
     "intro": [
         {
-            "path": "IMG_0006.JPG"
+            "path": "IMG_0006.JPG",
+            "description": "this is description 0"
         }
     ],
     "hongKong": [
         {
-            "path": "IMG_0001.JPG"
+            "path": "IMG_0001.JPG",
+            "description": "this is description 1"
         },
         {
-            "path": "IMG_0002.JPG"
+            "path": "IMG_0002.JPG",
+            "description": "this is description 2"
         }
     ]
 }

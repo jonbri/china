@@ -3,25 +3,26 @@ function loadImage( sPath, $context ) {
 }
 
 var sBasePath = './img/';
-var sDomId = 'pics';
 var data;
 
 function loadIntroPics() {
     var oSubData = data.intro;
-    var $context = jQuery('#introPics');
+        $context = jQuery('#introPics');
 
-    for( var i = 0; i < oSubData.length; i++ ) {
-        loadImage(sBasePath + oSubData[i].path, $context);
-    }
+    oSubData.forEach(function( o ) {
+        loadImage(sBasePath + o.path, $context);
+        $context.append('<div>' + o.description + '</div>');
+    });
 }
 
 function loadHongKongPics() {
     var oSubData = data.hongKong;
-    var $context = jQuery('#hongKongPics');
+        $context = jQuery('#hongKongPics');
 
-    for( var i = 0; i < oSubData.length; i++ ) {
-        loadImage(sBasePath + oSubData[i].path, $context);
-    }
+    oSubData.forEach(function( o ) {
+        loadImage(sBasePath + o.path, $context);
+        $context.append('<div>' + o.description + '</div>');
+    });
 }
 
 $(document).ready(function() {
