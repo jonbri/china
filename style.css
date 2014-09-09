@@ -7,6 +7,7 @@ body {
 .well {
     border: 2px solid black;
     font-size: 16px;
+    clear: both;
 }
 
 header {
@@ -18,12 +19,27 @@ header {
 }
 
 .tile {
-    margin: 5px 0;
+    margin: auto;
+    padding: 0px;
 }
 .picSection {
-    margin: 0;
     max-width: 390px;
-    width: auto;
+    width: 18.5%;
+    overflow: hidden;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 1px;
+    margin: 0.5em;
+    padding: 7px 0px;
+    box-shadow: 1px 0 0 0 #a5bdc1;
+    -webkit-box-shadow: 1px 0 0 0 #a5bdc1;
+    -moz-box-shadow: 1px 0 0 0 #a5bdc1;
+    border-color: white;
+    border-bottom-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-width: 5px;
+    border-bottom: 5px solid black;
 }
 .picSection img {
     border: 1px solid silver;
@@ -31,3 +47,33 @@ header {
     max-width: 390px;
     width: auto;
 }
+
+
+/* 4 columns 900*/
+@media (max-width: 1250px) {
+    .picSection {
+        width: 23%;
+    }
+}
+
+/* three columns 720*/
+@media (max-width: 860px) {
+    .picSection {
+        width: 30.5%;
+    }
+}
+
+/* two columns */
+@media (max-width: 600px) {
+    .picSection {
+        width: 46%;
+    }
+}
+
+/* one column */
+@media (max-width: 450px) {
+    .picSection {
+        width: 97%;
+    }
+}
+

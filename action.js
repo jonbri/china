@@ -30,6 +30,10 @@
             loadImage(sOriginalPath, sResizedPath);
             $imageSection.append('<div>' + o.description + '</div>');
         });
+
+        var msnry = new Masonry($context.get()[0], {
+            //columnWidth: 60
+        });
     }
 
     // EXECUTION STARTS HERE
