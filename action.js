@@ -1,44 +1,37 @@
-function loadImage( sPath, $context ) {
-    $context.append('<a href="' + sPath + '"><img src="' + sPath + '" /></a>');
-}
+(function() {
+    var IMAGE_BASE_PATH = './img/',
+        data;
 
-var sBasePath = './img/';
-var data;
+    function loadData() {
+        $.ajax({
+            type: 'POST',
+            url: './data.json',
+            async: false,
+            data: {}
+        }).done(function( remoteData ) {
+            data = remoteData;
+        });
+    }
 
-function loadIntroPics() {
-    var oSubData = data.intro;
-        $context = jQuery('#introPics');
+    function loadImageSection( sName ) {
+        function loadImage( sPath, $context ) {
+            $context.append('<a href="' + sPath + '"><img src="' + sPath + '" /></a>');
+        }
+        var oData = data[sName],
+            $context = jQuery('#' + sName + 'Pics');
+        oData.forEach(function( o ) {
+            loadImage(IMAGE_BASE_PATH + o.path, $context);
+            $context.append('<div>' + o.description + '</div>');
+        });
+    }
 
-    oSubData.forEach(function( o ) {
-        loadImage(sBasePath + o.path, $context);
-        $context.append('<div>' + o.description + '</div>');
+    // EXECUTION STARTS HERE
+    $(document).ready(function() {
+        loadData();
+        loadImageSection('intro');
+        setTimeout(function() {
+            loadImageSection('hongKong');
+        }, 500);
     });
-}
-
-function loadHongKongPics() {
-    var oSubData = data.hongKong;
-        $context = jQuery('#hongKongPics');
-
-    oSubData.forEach(function( o ) {
-        loadImage(sBasePath + o.path, $context);
-        $context.append('<div>' + o.description + '</div>');
-    });
-}
-
-$(document).ready(function() {
-
-    // render music albums
-    $.ajax({
-        type: 'POST',
-        url: './data.json',
-        data: {}
-    }).done(function( remoteData ) {
-        data = remoteData;
-    });
-
-    setTimeout(function() {
-        loadIntroPics();
-        loadHongKongPics();
-    }, 1000);
-});
+})();
 
