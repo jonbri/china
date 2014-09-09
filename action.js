@@ -17,17 +17,18 @@
 
     function loadImageSection( sName ) {
         var oData = data[sName],
-            $context = jQuery('#' + sName + 'Pics');
+            $context = jQuery('#' + sName + 'Pics'),
+            $imageSection = $('<div class="tile"></div>').appendTo($context);
 
         function loadImage( sPath, sPathLink ) {
-            $context.append('<a href="' + sPath + '"><img src="' + sPathLink + '" /></a>');
+            $imageSection.append('<a href="' + sPath + '"><img src="' + sPathLink + '" /></a>');
         }
 
         oData.forEach(function( o ) {
             var sOriginalPath = IMAGE_BASE_PATH_ORIGINAL + '/' + o.path,
                 sResizedPath = IMAGE_BASE_PATH_RESIZED + '/' + o.path;
             loadImage(sOriginalPath, sResizedPath);
-            $context.append('<div>' + o.description + '</div>');
+            $imageSection.append('<div>' + o.description + '</div>');
         });
     }
 

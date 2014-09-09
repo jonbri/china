@@ -17,6 +17,9 @@ header {
     margin: 5px;
 }
 
+.tile {
+    margin: 5px 0;
+}
 .picSection {
     margin: 0;
     max-width: 390px;
@@ -25,7 +28,6 @@ header {
 .picSection img {
     border: 1px solid silver;
     margin: 0;
-    margin-top: 5px;
     max-width: 390px;
     width: auto;
 }
