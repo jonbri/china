@@ -37,7 +37,7 @@
         loadData();
         setTimeout(function() {
             loadImageSection('intro');
-        }, 2000);
+        }, 0);
         setTimeout(function() {
             loadImageSection('hongKong');
         }, 500);

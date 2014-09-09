@@ -3,6 +3,10 @@
         {
             "path": "IMG_0006.JPG",
             "description": "this is description 0"
+        },
+        {
+            "path": "IMG_0001.JPG",
+            "description": "this is also description 0"
         }
     ],
     "hongKong": [
