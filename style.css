@@ -5,13 +5,13 @@ body {
     background: url("./wallpaper.jpg") repeat fixed center top #F0F0F0;
 }
 .well {
-    border: 2px solid black;
+    border: 2px solid yellow;
     font-size: 16px;
     clear: both;
 }
 
 header {
-    border: 2px solid black;
+    border: 2px solid yellow;
     background-color: #FF4500; /* china red */
     text-align: center; 
     padding: 5px;
@@ -22,7 +22,7 @@ header {
     margin: auto;
     padding: 0px;
 }
-.picSection {
+.tileContainer {
     max-width: 390px;
     width: 18.5%;
     overflow: hidden;
@@ -38,42 +38,11 @@ header {
     border-bottom-color: black;
     border-style: solid;
     border-width: 1px;
-    border-bottom-width: 5px;
-    border-bottom: 5px solid black;
 }
-.picSection img {
+.tileContainer img {
     border: 1px solid silver;
     margin: 0;
     max-width: 390px;
     width: auto;
-}
-
-
-/* 4 columns 900*/
-@media (max-width: 1250px) {
-    .picSection {
-        width: 23%;
-    }
-}
-
-/* three columns 720*/
-@media (max-width: 860px) {
-    .picSection {
-        width: 30.5%;
-    }
-}
-
-/* two columns */
-@media (max-width: 600px) {
-    .picSection {
-        width: 46%;
-    }
-}
-
-/* one column */
-@media (max-width: 450px) {
-    .picSection {
-        width: 97%;
-    }
 }
 

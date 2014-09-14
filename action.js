@@ -17,7 +17,7 @@
 
     function loadImageSection( sName ) {
         var oData = data[sName],
-            $context = jQuery('#' + sName + 'Pics'),
+            $context = jQuery('.tileContainer', '#' + sName),
             $imageSection = $('<div class="tile"></div>').appendTo($context);
 
         function loadImage( sPath, sPathLink ) {
