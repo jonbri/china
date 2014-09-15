@@ -15,7 +15,7 @@
         });
     }
 
-    function loadImageSection( sName ) {
+    function loadTiles( sName ) {
         var oData = data[sName],
             $context = jQuery('.tileContainer', '#' + sName),
             $imageSection = $('<div class="tile"></div>').appendTo($context);
@@ -31,19 +31,23 @@
             $imageSection.append('<div>' + o.description + '</div>');
         });
 
-        var msnry = new Masonry($context.get()[0], {
-            //columnWidth: 60
-        });
+        /*
+        setTimeout(function() {
+            var msnry = new Masonry($context.get()[0], {
+                //columnWidth: 60
+            });
+        }, 1100);
+        */
     }
 
     // EXECUTION STARTS HERE
     $(document).ready(function() {
         loadData();
         setTimeout(function() {
-            loadImageSection('intro');
+            loadTiles('intro');
         }, 0);
         setTimeout(function() {
-            loadImageSection('hongKong');
+            loadTiles('hongKong');
         }, 500);
     });
 })();

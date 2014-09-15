@@ -18,11 +18,15 @@ header {
     margin: 5px;
 }
 
-.tile {
-    margin: auto;
-    padding: 0px;
-}
 .tileContainer {
+    width: 100%;
+    background-color: blue;
+}
+.tile {
+    background-color: yellow;
+    padding: 5px;
+    margin: 5px;
+    /*
     max-width: 390px;
     width: 18.5%;
     overflow: hidden;
@@ -38,11 +42,12 @@ header {
     border-bottom-color: black;
     border-style: solid;
     border-width: 1px;
+    */
 }
-.tileContainer img {
-    border: 1px solid silver;
+
+.tile img {
+    border: 1px solid yellow;
     margin: 0;
     max-width: 390px;
-    width: auto;
 }
 
