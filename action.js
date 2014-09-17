@@ -4,25 +4,6 @@
         IMAGE_BASE_PATH_RESIZED = IMAGE_BASE_PATH + '/resized',
         data;
 
-    //http://stackoverflow.com/questions/220188/how-can-i-determine-if-a-dynamically-created-dom-element-has-been-added-to-the-d
-    function isInDOMTree(node) {
-       // If the farthest-back ancestor of our node has a "body"
-       // property (that node would be the document itself), 
-       // we assume it is in the page's DOM tree.
-       return !!(findUltimateAncestor(node).body);
-    }
-    function findUltimateAncestor(node) {
-       // Walk up the DOM tree until we are at the top (parentNode 
-       // will return null at that point).
-       // NOTE: this will return the same node that was passed in 
-       // if it has no ancestors.
-       var ancestor = node;
-       while(ancestor.parentNode) {
-          ancestor = ancestor.parentNode;
-       }
-       return ancestor;
-    }
-
     function loadData() {
         $.ajax({
             type: 'POST',
@@ -38,27 +19,37 @@
         var oData = data[sName],
             $tileContainer = jQuery('.tileContainer', '#' + sName);
 
-        function loadImage( sPath, sPathLink ) {
-            var $imageSection = $('<div class="tile"></div>').appendTo($tileContainer);
-            $imageSection.append('<a href="' + sPath + '"><img src="' + sPathLink + '" /></a>');
-            return $imageSection;
+        function loadTile( sPath, sPathLink ) {
+            var $tile = $('<div class="tile"></div>').appendTo($tileContainer);
+            $tile.append('<a href="' + sPath + '"><img src="' + sPathLink + '" /></a>');
+            return $tile;
         }
 
+        var $lastTile;
         oData.forEach(function( o ) {
             var sOriginalPath = IMAGE_BASE_PATH_ORIGINAL + '/' + o.path,
                 sResizedPath = IMAGE_BASE_PATH_RESIZED + '/' + o.path;
-            var $imageSection = loadImage(sOriginalPath, sResizedPath);
-            $imageSection.append('<div>' + o.description + '</div>');
+            var $tile = loadTile(sOriginalPath, sResizedPath);
+            $tile.append('<div>' + o.description + '</div>');
+            $lastTile = $tile;
         });
 
-        //setInterval(function() {
-            //if( isInDOMTree() ) {
-                setTimeout(function() {
+        if( $lastTile ) {
+            var $img = jQuery('img', $lastTile);
+            var iCount = 0;
+            var iIntervalDelay = 0;
+            var interval = setInterval(function() {
+                if( $img.height() > 30 ) {
                     var msnry = new Masonry($tileContainer.get()[0], {
                     });
-                }, 2000);
-            //}
-        //}, 100);
+                    clearInterval(interval);
+                }
+                iIntervalDelay += 100;
+                if( iCount > 10 ) {
+                    clearInterval(interval);
+                }
+            }, iIntervalDelay);
+        }
     }
 
     // EXECUTION STARTS HERE
