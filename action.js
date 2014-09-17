@@ -26,7 +26,12 @@
             oDoneDeferred = new jQuery.Deferred(),
             $tileContainer = jQuery('.tileContainer', '#' + sName);
 
+        function markDomNodeHeightAsAttr( $domNode ) {
+            $domNode.attr('__lastHeight', $domNode.height());
+        }
+
         var aDeferreds = [];
+        var aTiles = [];
         oData.forEach(function( oTile ) {
             var sOriginalPath = IMAGE_BASE_PATH_ORIGINAL + '/' + oTile.path,
                 sResizedPath = IMAGE_BASE_PATH_RESIZED + '/' + oTile.path,
@@ -46,14 +51,29 @@
                 .error(function() { console.log("error loading image"); oDeferred.resolve(); })
                 .attr("src", $img.attr("src"))
             ;
+
+            aTiles.push($tile);
+            markDomNodeHeightAsAttr($tile);
         });
 
         var msnry = new Masonry($tileContainer.get()[0], {
         });
 
+        var iIntervalLength = 10;
         var interval = setInterval(function() {
-            msnry.layout();
-        }, 500);
+            // has size of any of the tiles changed?
+            // iterate throu
+            for( var i = 0; i < aTiles.length; i++ ) {
+                var oldHeight = aTiles[i].attr('__lastHeight');
+                markDomNodeHeightAsAttr(aTiles[i]);
+                if( oldHeight !== aTiles[i].height() ) {
+                    msnry.layout();
+                    break;
+                }
+            }
+
+            iIntervalLength += 10;
+        }, iIntervalLength);
 
         $.when.apply(jQuery, aDeferreds).then(function ( o ) {
             clearInterval(interval);
