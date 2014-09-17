@@ -27,7 +27,7 @@
             $tileContainer = jQuery('.tileContainer', '#' + sName);
 
         function markDomNodeHeightAsAttr( $domNode ) {
-            $domNode.attr('__lastHeight', $domNode.height());
+            $domNode.attr('__lastheight', $domNode.height());
         }
 
         var aDeferreds = [];
@@ -64,9 +64,11 @@
             // has size of any of the tiles changed?
             // iterate throu
             for( var i = 0; i < aTiles.length; i++ ) {
-                var oldHeight = aTiles[i].attr('__lastHeight');
-                markDomNodeHeightAsAttr(aTiles[i]);
-                if( oldHeight !== aTiles[i].height() ) {
+                var iterTile = aTiles[i];
+                var oldHeight = iterTile.attr('__lastheight');
+                markDomNodeHeightAsAttr(iterTile);
+                if( Number(oldHeight) !== iterTile.height() ) {
+                    console.debug('calling layout' + new Date() + '. oldHeight: ' + Number(oldHeight) + '. iterTile.height(): ' + iterTile.height());
                     msnry.layout();
                     break;
                 }
@@ -95,7 +97,7 @@
         p.then(function() {
             return loadTileContainer('intro');
         }).then(function() {
-            return loadTileContainer('hongKong');
+            //return loadTileContainer('hongKong');
         });
         d.resolve();
     });
