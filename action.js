@@ -51,10 +51,14 @@
             $imageSection.append('<div>' + o.description + '</div>');
         });
 
-        setTimeout(function() {
-            var msnry = new Masonry($tileContainer.get()[0], {
-            });
-        }, 1100);
+        //setInterval(function() {
+            //if( isInDOMTree() ) {
+                setTimeout(function() {
+                    var msnry = new Masonry($tileContainer.get()[0], {
+                    });
+                }, 2000);
+            //}
+        //}, 100);
     }
 
     // EXECUTION STARTS HERE

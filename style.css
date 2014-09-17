@@ -25,11 +25,28 @@ header {
 .tile {
     background-color: orange;
     border: 1px solid black;
-    padding: 5px;
-    margin: 5px;
-    width: 30.5%;
 }
-
+/* 1 column */
+@media screen and (max-width: 299px) {
+  .tile {
+    width: 99%;
+    margin: .0625em;
+  }
+}
+/* 2 columns */
+@media screen and (min-width: 300px) {
+  .tile {
+    width: 48.5%;
+    margin: .125em;
+  }
+}
+/* 3 columns */
+@media screen and (min-width: 600px) {
+  .tile {
+    width: 30%;
+    margin: .25em;
+  }
+}
 .tile img {
     border: 1px solid yellow;
     margin: 0;
