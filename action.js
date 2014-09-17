@@ -15,41 +15,36 @@
         });
     }
 
+    /*
+        Create the dom for the tile.
+        When all of the tile's dom image's load callbacks have been fired,
+        (using an array of deferreds),
+        initialize masonry
+    */
     function loadTileContainer( sName ) {
         var oData = data[sName],
             $tileContainer = jQuery('.tileContainer', '#' + sName);
 
         var aDeferreds = [];
-        oData.forEach(function( o ) {
-            var sOriginalPath = IMAGE_BASE_PATH_ORIGINAL + '/' + o.path,
-                sResizedPath = IMAGE_BASE_PATH_RESIZED + '/' + o.path,
-                $tile = $('<div class="tile"></div>').appendTo($tileContainer);
+        oData.forEach(function( oTile ) {
+            var sOriginalPath = IMAGE_BASE_PATH_ORIGINAL + '/' + oTile.path,
+                sResizedPath = IMAGE_BASE_PATH_RESIZED + '/' + oTile.path,
+                $tile = $('<div class="tile"></div>').appendTo($tileContainer),
+                $img,
+                oDeferred = new jQuery.Deferred();
 
             $tile.append('<a href="' + sOriginalPath + '"><img src="' + sResizedPath + '" /></a>');
-            $tile.append('<div>' + o.description + '</div>');
+            $tile.append('<div>' + oTile.description + '</div>');
 
-            var oDeferred = new jQuery.Deferred();
             aDeferreds.push(oDeferred);
 
-//http://stackoverflow.com/questions/1977871/check-if-an-image-is-loaded-no-errors-in-javascript
-var $img = jQuery('img', $tile);
-$("<img/>")
-    .load(function() { oDeferred.resolve(); })
-    .error(function() { console.log("error loading image"); })
-    .attr("src", $img.attr("src"))
-;
-
-            /*
-            var iIntervalDelay = 10;
-            var $img = jQuery('img', $tile);
-            var interval = setInterval(function() {
-                if( $img.height() > 10 ) {
-                    oDeferred.resolve();
-                    clearInterval(interval);
-                }
-                iIntervalDelay += 100;
-            }, iIntervalDelay);
-            */
+            //http://stackoverflow.com/questions/1977871/check-if-an-image-is-loaded-no-errors-in-javascript
+            $img = jQuery('img', $tile);
+            $("<img />")
+                .load(function() { oDeferred.resolve(); })
+                .error(function() { console.log("error loading image"); oDeferred.resolve(); })
+                .attr("src", $img.attr("src"))
+            ;
         });
 
         $.when.apply(jQuery, aDeferreds).then(function ( o ) {
