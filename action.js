@@ -36,10 +36,10 @@
 
     function loadTileContainer( sName ) {
         var oData = data[sName],
-            $context = jQuery('.tileContainer', '#' + sName);
+            $tileContainer = jQuery('.tileContainer', '#' + sName);
 
         function loadImage( sPath, sPathLink ) {
-            var $imageSection = $('<div class="tile"></div>').appendTo($context);
+            var $imageSection = $('<div class="tile"></div>').appendTo($tileContainer);
             $imageSection.append('<a href="' + sPath + '"><img src="' + sPathLink + '" /></a>');
             return $imageSection;
         }
@@ -51,13 +51,10 @@
             $imageSection.append('<div>' + o.description + '</div>');
         });
 
-        /*
         setTimeout(function() {
-            var msnry = new Masonry($context.get()[0], {
-                //columnWidth: 60
+            var msnry = new Masonry($tileContainer.get()[0], {
             });
         }, 1100);
-        */
     }
 
     // EXECUTION STARTS HERE
