@@ -4,6 +4,25 @@
         IMAGE_BASE_PATH_RESIZED = IMAGE_BASE_PATH + '/resized',
         data;
 
+    //http://stackoverflow.com/questions/220188/how-can-i-determine-if-a-dynamically-created-dom-element-has-been-added-to-the-d
+    function isInDOMTree(node) {
+       // If the farthest-back ancestor of our node has a "body"
+       // property (that node would be the document itself), 
+       // we assume it is in the page's DOM tree.
+       return !!(findUltimateAncestor(node).body);
+    }
+    function findUltimateAncestor(node) {
+       // Walk up the DOM tree until we are at the top (parentNode 
+       // will return null at that point).
+       // NOTE: this will return the same node that was passed in 
+       // if it has no ancestors.
+       var ancestor = node;
+       while(ancestor.parentNode) {
+          ancestor = ancestor.parentNode;
+       }
+       return ancestor;
+    }
+
     function loadData() {
         $.ajax({
             type: 'POST',
@@ -15,35 +34,40 @@
         });
     }
 
-    function loadImageSection( sName ) {
+    function loadTileContainer( sName ) {
         var oData = data[sName],
-            $context = jQuery('.tileContainer', '#' + sName),
-            $imageSection = $('<div class="tile"></div>').appendTo($context);
+            $context = jQuery('.tileContainer', '#' + sName);
 
         function loadImage( sPath, sPathLink ) {
+            var $imageSection = $('<div class="tile"></div>').appendTo($context);
             $imageSection.append('<a href="' + sPath + '"><img src="' + sPathLink + '" /></a>');
+            return $imageSection;
         }
 
         oData.forEach(function( o ) {
             var sOriginalPath = IMAGE_BASE_PATH_ORIGINAL + '/' + o.path,
                 sResizedPath = IMAGE_BASE_PATH_RESIZED + '/' + o.path;
-            loadImage(sOriginalPath, sResizedPath);
+            var $imageSection = loadImage(sOriginalPath, sResizedPath);
             $imageSection.append('<div>' + o.description + '</div>');
         });
 
-        var msnry = new Masonry($context.get()[0], {
-            //columnWidth: 60
-        });
+        /*
+        setTimeout(function() {
+            var msnry = new Masonry($context.get()[0], {
+                //columnWidth: 60
+            });
+        }, 1100);
+        */
     }
 
     // EXECUTION STARTS HERE
     $(document).ready(function() {
         loadData();
         setTimeout(function() {
-            loadImageSection('intro');
+            loadTileContainer('intro');
         }, 0);
         setTimeout(function() {
-            loadImageSection('hongKong');
+            loadTileContainer('hongKong');
         }, 500);
     });
 })();
