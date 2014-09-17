@@ -48,11 +48,17 @@
             ;
         });
 
+        var msnry = new Masonry($tileContainer.get()[0], {
+        });
+
+        var interval = setInterval(function() {
+            msnry.layout();
+        }, 500);
+
         $.when.apply(jQuery, aDeferreds).then(function ( o ) {
-            var msnry = new Masonry($tileContainer.get()[0], {
-            });
+            clearInterval(interval);
+            msnry.layout();
             oDoneDeferred.resolve();
-            //oDoneDeferred.fail();
         });
         
         return oDoneDeferred.promise();
