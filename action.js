@@ -23,6 +23,7 @@
     */
     function loadTileContainer( sName ) {
         var oData = data[sName],
+            oDoneDeferred = new jQuery.Deferred(),
             $tileContainer = jQuery('.tileContainer', '#' + sName);
 
         var aDeferreds = [];
@@ -50,18 +51,27 @@
         $.when.apply(jQuery, aDeferreds).then(function ( o ) {
             var msnry = new Masonry($tileContainer.get()[0], {
             });
+            oDoneDeferred.resolve();
+            //oDoneDeferred.fail();
         });
+        
+        return oDoneDeferred.promise();
     }
 
     // EXECUTION STARTS HERE
     $(document).ready(function() {
+        // synchrounously get data...
         loadData();
-        setTimeout(function() {
-            loadTileContainer('intro');
-        }, 0);
-        setTimeout(function() {
-            loadTileContainer('hongKong');
-        }, 500);
+
+        // sequentially create and download the various tile sections
+        var d = jQuery.Deferred(), 
+        p = d.promise();
+        p.then(function() {
+            return loadTileContainer('intro');
+        }).then(function() {
+            return loadTileContainer('hongKong');
+        });
+        d.resolve();
     });
 })();
 
