@@ -19,37 +19,43 @@
         var oData = data[sName],
             $tileContainer = jQuery('.tileContainer', '#' + sName);
 
-        function loadTile( sPath, sPathLink ) {
-            var $tile = $('<div class="tile"></div>').appendTo($tileContainer);
-            $tile.append('<a href="' + sPath + '"><img src="' + sPathLink + '" /></a>');
-            return $tile;
-        }
-
-        var $lastTile;
+        var aDeferreds = [];
         oData.forEach(function( o ) {
             var sOriginalPath = IMAGE_BASE_PATH_ORIGINAL + '/' + o.path,
-                sResizedPath = IMAGE_BASE_PATH_RESIZED + '/' + o.path;
-            var $tile = loadTile(sOriginalPath, sResizedPath);
-            $tile.append('<div>' + o.description + '</div>');
-            $lastTile = $tile;
-        });
+                sResizedPath = IMAGE_BASE_PATH_RESIZED + '/' + o.path,
+                $tile = $('<div class="tile"></div>').appendTo($tileContainer);
 
-        if( $lastTile ) {
-            var $img = jQuery('img', $lastTile);
-            var iCount = 0;
-            var iIntervalDelay = 0;
+            $tile.append('<a href="' + sOriginalPath + '"><img src="' + sResizedPath + '" /></a>');
+            $tile.append('<div>' + o.description + '</div>');
+
+            var oDeferred = new jQuery.Deferred();
+            aDeferreds.push(oDeferred);
+
+//http://stackoverflow.com/questions/1977871/check-if-an-image-is-loaded-no-errors-in-javascript
+var $img = jQuery('img', $tile);
+$("<img/>")
+    .load(function() { oDeferred.resolve(); })
+    .error(function() { console.log("error loading image"); })
+    .attr("src", $img.attr("src"))
+;
+
+            /*
+            var iIntervalDelay = 10;
+            var $img = jQuery('img', $tile);
             var interval = setInterval(function() {
-                if( $img.height() > 30 ) {
-                    var msnry = new Masonry($tileContainer.get()[0], {
-                    });
+                if( $img.height() > 10 ) {
+                    oDeferred.resolve();
                     clearInterval(interval);
                 }
                 iIntervalDelay += 100;
-                if( iCount > 10 ) {
-                    clearInterval(interval);
-                }
             }, iIntervalDelay);
-        }
+            */
+        });
+
+        $.when.apply(jQuery, aDeferreds).then(function ( o ) {
+            var msnry = new Masonry($tileContainer.get()[0], {
+            });
+        });
     }
 
     // EXECUTION STARTS HERE

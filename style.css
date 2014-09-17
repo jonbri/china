@@ -21,11 +21,13 @@ header {
 .tileContainer {
     width: 100%;
     background-color: blue;
+    margin: 0;
+    padding: 0;
 }
 .tile {
     background-color: orange;
-    border: 1px solid black;
 }
+/* ********** Masonry LayoutMode: MAGNITUDE4 ************** */
 /* 1 column */
 @media screen and (max-width: 299px) {
   .tile {
@@ -45,6 +47,13 @@ header {
   .tile {
     width: 30%;
     margin: .25em;
+  }
+}
+/* 4 columns */
+@media screen and (min-width: 800px) {
+  .tile {
+    width: 23.5%;
+    margin: .125em;
   }
 }
 .tile img {

@@ -1,32 +1,3 @@
-
-
-/* 4 columns 900*/
-@media (max-width: 1250px) {
-    .tileContainer {
-        width: 23%;
-    }
-}
-
-/* three columns 720*/
-@media (max-width: 860px) {
-    .tileContainer {
-        width: 30.5%;
-    }
-}
-
-/* two columns */
-@media (max-width: 600px) {
-    .tileContainer {
-        width: 46%;
-    }
-}
-
-/* one column */
-@media (max-width: 450px) {
-    .tileContainer {
-        width: 97%;
-    }
-}
     /*
     max-width: 390px;
     width: 18.5%;
