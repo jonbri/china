@@ -56,25 +56,30 @@
             markDomNodeHeightAsAttr($tile);
         });
 
+        // go ahead and declare masonry, the dom nodes have at least been created already
         var msnry = new Masonry($tileContainer.get()[0], {
         });
 
+        // detect when height changes and invoke a masonry layout
         var iIntervalLength = 10;
         var interval = setInterval(function() {
             // has size of any of the tiles changed?
-            // iterate throu
+            var iterTile;
             for( var i = 0; i < aTiles.length; i++ ) {
-                var iterTile = aTiles[i];
+                iterTile = aTiles[i];
                 var oldHeight = iterTile.attr('__lastheight');
-                markDomNodeHeightAsAttr(iterTile);
                 if( Number(oldHeight) !== iterTile.height() ) {
-                    console.debug('calling layout' + new Date() + '. oldHeight: ' + Number(oldHeight) + '. iterTile.height(): ' + iterTile.height());
+                    console.debug(sName + '. ' + $('img', iterTile).attr('src') + ' calling layout' + new Date() + '. oldHeight: ' + Number(oldHeight) + '. iterTile.height(): ' + iterTile.height());
                     msnry.layout();
                     break;
                 }
             }
 
-            iIntervalLength += 10;
+            aTiles.forEach(function( iterTile ) {
+                markDomNodeHeightAsAttr(iterTile);
+            });
+
+            iIntervalLength = 100;
         }, iIntervalLength);
 
         $.when.apply(jQuery, aDeferreds).then(function ( o ) {
@@ -97,7 +102,7 @@
         p.then(function() {
             return loadTileContainer('intro');
         }).then(function() {
-            //return loadTileContainer('hongKong');
+            return loadTileContainer('hongKong');
         });
         d.resolve();
     });
