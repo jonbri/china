@@ -37,7 +37,10 @@
         }
 
         function nodeDoneLoading($tile, oDeferred) {
-            jQuery('.loading', $tile).remove();
+            var $loading = jQuery('.loading', $tile);
+            $loading.fadeOut("slow", function() {
+                $(this).remove();
+            });
             oDeferred.resolve(); 
         }
 

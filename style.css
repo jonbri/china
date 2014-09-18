@@ -62,3 +62,11 @@ header {
     width: 100%;
 }
 
+.loading {
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
