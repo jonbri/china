@@ -5,13 +5,13 @@ body {
     background: url("./wallpaper.jpg") repeat fixed center top #F0F0F0;
 }
 .well {
-    border: 2px solid yellow;
+    border: 2px solid #FFFF00; /* china yellow */
     font-size: 16px;
     clear: both;
 }
 
 header {
-    border: 2px solid yellow;
+    border: 2px solid #FFFF00; /* china yellow */
     background-color: #FF4500; /* china red */
     text-align: center; 
     padding: 5px;
@@ -20,47 +20,48 @@ header {
 
 .tileContainer {
     width: 100%;
-    background-color: blue;
+    background-color: #FF4500; /* china red */
     margin: 0;
-    padding: 0;
+    padding: 2px;
 }
 .tile {
-    background-color: orange;
+    background-color: #FFFF00; /* china yellow */
     overflow: hidden;
+    border-color: #FFFF00; /* china yellow */
+    border-bottom-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-bottom-width: 3px;
+    margin: .15em;
+}
+.tile img {
+    margin: 0;
+    width: 100%;
 }
 /* ********** Masonry LayoutMode: MAGNITUDE4 ************** */
 /* 1 column */
 @media screen and (max-width: 299px) {
   .tile {
     width: 99%;
-    margin: .0625em;
   }
 }
 /* 2 columns */
 @media screen and (min-width: 300px) {
   .tile {
     width: 48.5%;
-    margin: .125em;
   }
 }
 /* 3 columns */
 @media screen and (min-width: 600px) {
   .tile {
     width: 30%;
-    margin: .25em;
   }
 }
 /* 4 columns */
 @media screen and (min-width: 800px) {
   .tile {
     width: 23.5%;
-    margin: .125em;
   }
-}
-.tile img {
-    border: 1px solid yellow;
-    margin: 0;
-    width: 100%;
 }
 
 .loading {
