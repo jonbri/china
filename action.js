@@ -2,17 +2,22 @@
     var IMAGE_BASE_PATH = './img',
         IMAGE_BASE_PATH_ORIGINAL = IMAGE_BASE_PATH + '/original',
         IMAGE_BASE_PATH_RESIZED = IMAGE_BASE_PATH + '/resized',
+        // held in a closure for everyone to use
         data;
 
     function loadData() {
+        var oDoneDeferred = new jQuery.Deferred();
+
         $.ajax({
             type: 'POST',
             url: './data.json',
-            async: false,
             data: {}
         }).done(function( remoteData ) {
             data = remoteData;
+            oDoneDeferred.resolve();
         });
+
+        return oDoneDeferred.promise();
     }
 
     /*
@@ -94,15 +99,21 @@
 
     // EXECUTION STARTS HERE
     $(document).ready(function() {
-        // synchrounously get data...
-        loadData();
+        loadData().then(function() {
+            // store sections in array
+            var aTileSections = [];
+            for (var key in data) {
+                if( data.hasOwnProperty(key) ) {
+                    aTileSections.push(key);
+                }
+            }
 
-        var aTileSections = ['intro', 'hongKong'];
-
-        var data = loadTileContainer(aTileSections.shift());
-        aTileSections.forEach(function( sTileSection ) {
-            data = data.then(function() {
-                return loadTileContainer(sTileSection);
+            // load sections on after another
+            var deferred = loadTileContainer(aTileSections.shift());
+            aTileSections.forEach(function( sTileSection ) {
+                deferred = deferred.then(function() {
+                    return loadTileContainer(sTileSection);
+                });
             });
         });
     });
