@@ -47,8 +47,8 @@
         var aDeferreds = [];
         var aTiles = [];
         oData.forEach(function( oTile ) {
-            var sOriginalPath = IMAGE_BASE_PATH_ORIGINAL + '/' + oTile.path,
-                sResizedPath = IMAGE_BASE_PATH_RESIZED + '/' + oTile.path,
+            var sOriginalPath = IMAGE_BASE_PATH_ORIGINAL + '/' + sName + '/' + oTile.path,
+                sResizedPath = IMAGE_BASE_PATH_RESIZED + '/' + sName + '/' + oTile.path,
                 $tile = $('<div class="tile"><span class="loading">loading...</span></div>').appendTo($tileContainer),
                 $img,
                 oDeferred = new jQuery.Deferred();
