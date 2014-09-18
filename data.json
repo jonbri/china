@@ -39,6 +39,16 @@
             "path": "IMG_0005.JPG",
             "description": "this is description 2"
         }
+    ],
+    "photoShoot": [
+        {
+            "path": "IMG_0004.JPG",
+            "description": "this is description 1"
+        },
+        {
+            "path": "IMG_0005.JPG",
+            "description": "this is description 2"
+        }
     ]
 }
 
