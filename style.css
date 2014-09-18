@@ -26,6 +26,7 @@ header {
 }
 .tile {
     background-color: orange;
+    overflow: hidden;
 }
 /* ********** Masonry LayoutMode: MAGNITUDE4 ************** */
 /* 1 column */

@@ -10,11 +10,11 @@
         },
         {
             "path": "IMG_0002.JPG",
-            "description": "this is description 0"
+            "description": "this is a lot of text.this is a lot of text. pthis is a lot of text. this is a lot of text."
         },
         {
             "path": "IMG_0003.JPG",
-            "description": "this is also description 0"
+            "description": "withasuperlongworwithasuperlongworwithasuperlongworwithasuperlongworddddwithasuperlongword"
         },
         {
             "path": "IMG_0004.JPG",
@@ -26,7 +26,8 @@
         },
         {
             "path": "IMG_0006.JPG",
-            "description": "this is description 2"
+            "description": "Here is some more text. Visit <a href=\"http://billsdaily.com/\">google</a> for more info."
+            
         }
     ],
     "hongKong": [
