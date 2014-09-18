@@ -100,14 +100,11 @@
         var aTileSections = ['intro', 'hongKong'];
 
         var data = loadTileContainer(aTileSections.shift());
-        for (var i = 0; i < aTileSections.length; i++) {
-            // Or only the last "i" will be used
-            (function (i) {
-                data = data.then(function() {
-                    return loadTileContainer(aTileSections[i]);
-                });
-            }(i));
-        }
+        aTileSections.forEach(function( sTileSection ) {
+            data = data.then(function() {
+                return loadTileContainer(sTileSection);
+            });
+        });
     });
 })();
 
