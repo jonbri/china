@@ -22,6 +22,7 @@
         initialize masonry
     */
     function loadTileContainer( sName ) {
+        console.debug('loadTileContainer ' + sName);
         var oData = data[sName],
             oDoneDeferred = new jQuery.Deferred(),
             $tileContainer = jQuery('.tileContainer', '#' + sName);
@@ -96,15 +97,17 @@
         // synchrounously get data...
         loadData();
 
-        // sequentially create and download the various tile sections
-        var d = jQuery.Deferred(), 
-        p = d.promise();
-        p.then(function() {
-            return loadTileContainer('intro');
-        }).then(function() {
-            return loadTileContainer('hongKong');
-        });
-        d.resolve();
+        var aTileSections = ['intro', 'hongKong'];
+
+        var data = loadTileContainer(aTileSections.shift());
+        for (var i = 0; i < aTileSections.length; i++) {
+            // Or only the last "i" will be used
+            (function (i) {
+                data = data.then(function() {
+                    return loadTileContainer(aTileSections[i]);
+                });
+            }(i));
+        }
     });
 })();
 
