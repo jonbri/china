@@ -32,12 +32,374 @@
     ],
     "hongKong": [
         {
-            "path": "IMG_0004.JPG",
-            "description": "this is description 1"
+            "path": "IMG_0007.JPG",
+            "description": ""
         },
         {
-            "path": "IMG_0005.JPG",
-            "description": "this is description 2"
+            "path": "IMG_0014.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0035.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0041.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0042.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0047.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0052.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0055.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0060.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0061.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0073.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0076.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0083.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0118.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0123.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0147.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0149.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0177.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0187.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0190.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0193.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0195.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0199.JPG",
+            "description": ""
+        }
+    ],
+    "hongKongBBQ": [
+        {
+            "path": "IMG_0218.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0220.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0222.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0224.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0225.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0226.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0228.JPG",
+            "description": ""
+        }
+    ],
+    "hongKongDimSum": [
+        {
+            "path": "IMG_0164.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0165.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0168.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0169.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0170.JPG",
+            "description": ""
+        }
+    ],
+    "hongKongJune4Museum": [
+        {
+            "path": "IMG_0191.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0192.JPG",
+            "description": ""
+        }
+    ],
+    "hongKongSubway": [
+        {
+            "path": "IMG_0023.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0027.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0030.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0200.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0204.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0206.JPG",
+            "description": ""
+        }
+    ],
+    "hongKongTrolly": [
+        {
+            "path": "IMG_0101.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0111.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0113.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0114.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0121.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0122.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0127.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0135.JPG",
+            "description": ""
+        }
+    ],
+    "miniChina": [
+        {
+            "path": "IMG_0251.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0252.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0253.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0254.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0257.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0259.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0261.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0263.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0267.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0268.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0269.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0270.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0272.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0273.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0275.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0278.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0279.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0282.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0284.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0287.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0288.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0292.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0294.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0298.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0303.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0306.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0314.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0317.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0319.JPG",
+            "description": ""
+        }
+    ],
+    "Shenzhen": [
+        {
+            "path": "IMG_0231.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0232.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0234.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0239.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0241.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0242.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0246.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0325.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0329.JPG",
+            "description": ""
         }
     ],
     "photoShoot": [
