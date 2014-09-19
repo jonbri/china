@@ -1,3 +1,4 @@
+__china = {};
 (function() {
     var IMAGE_BASE_PATH = './img',
         IMAGE_BASE_PATH_ORIGINAL = IMAGE_BASE_PATH + '/original',
@@ -108,8 +109,7 @@
         return oDoneDeferred.promise();
     }
 
-    // EXECUTION STARTS HERE
-    $(document).ready(function() {
+    __china.go = function( aSections ) {
         loadData().then(function() {
             // store sections in array
             var aTileSections = [];
@@ -119,14 +119,16 @@
                 }
             }
 
-            // load sections on after another
+            // load sections one after another
             var deferred = loadTileContainer(aTileSections.shift());
             aTileSections.forEach(function( sTileSection ) {
-                deferred = deferred.then(function() {
-                    return loadTileContainer(sTileSection);
-                });
+                if( jQuery.inArray(sTileSection, aSections) === true ) {
+                    deferred = deferred.then(function() {
+                        return loadTileContainer(sTileSection);
+                    });
+                }
             });
         });
-    });
+    };
 })();
 
