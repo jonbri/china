@@ -114,19 +114,19 @@ __china = {};
             // store sections in array
             var aTileSections = [];
             for (var key in data) {
-                if( data.hasOwnProperty(key) ) {
-                    aTileSections.push(key);
+                if( jQuery.inArray(key, aSections) !== -1 ) {
+                    if( data.hasOwnProperty(key) ) {
+                        aTileSections.push(key);
+                    }
                 }
             }
 
             // load sections one after another
             var deferred = loadTileContainer(aTileSections.shift());
             aTileSections.forEach(function( sTileSection ) {
-                if( jQuery.inArray(sTileSection, aSections) === true ) {
-                    deferred = deferred.then(function() {
-                        return loadTileContainer(sTileSection);
-                    });
-                }
+                deferred = deferred.then(function() {
+                    return loadTileContainer(sTileSection);
+                });
             });
         });
     };
