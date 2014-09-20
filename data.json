@@ -1,43 +1,12 @@
 {
-    "intro": [
-        {
-            "path": "IMG_0000.JPG",
-            "description": "this is description 0"
-        },
-        {
-            "path": "IMG_0001.JPG",
-            "description": "this is also description 0"
-        },
-        {
-            "path": "IMG_0002.JPG",
-            "description": "this is a lot of text.this is a lot of text. pthis is a lot of text. this is a lot of text."
-        },
-        {
-            "path": "IMG_0003.JPG",
-            "description": "withasuperlongworwithasuperlongworwithasuperlongworwithasuperlongworddddwithasuperlongword"
-        },
-        {
-            "path": "IMG_0004.JPG",
-            "description": "this is description 1"
-        },
-        {
-            "path": "IMG_0005.JPG",
-            "description": "this is description 2"
-        },
-        {
-            "path": "IMG_0006.JPG",
-            "description": "Here is some more text. Visit <a href=\"http://billsdaily.com/\">google</a> for more info."
-            
-        }
-    ],
     "hongKong": [
         {
             "path": "IMG_0007.JPG",
-            "description": "&quot;Please do not feed raises the small birds&quot; This was from a McDonalds in the train station"
+            "description": "&quot;Please do not feed raises the small birds&quot; This was from a McDonalds in the train station."
         },
         {
             "path": "IMG_0014.JPG",
-            "description": "In the train station I saw my first true &quot;squatter&quot;"
+            "description": "In the train station I saw my first true &quot;squatter&quot;."
         },
         {
             "path": "IMG_0035.JPG",
@@ -57,11 +26,11 @@
         },
         {
             "path": "IMG_0052.JPG",
-            "description": "At constructions sites, it was common to see bamboo used as scafollding"
+            "description": "At constructions sites, it was common to see bamboo used as scaffolding."
         },
         {
             "path": "IMG_0055.JPG",
-            "description": "Pawnshop"
+            "description": "They have pawnshops too!"
         },
         {
             "path": "IMG_0060.JPG",
@@ -81,7 +50,7 @@
         },
         {
             "path": "IMG_0083.JPG",
-            "description": "There's plenty of English to survive."
+            "description": "There's plenty of English to survive in Hong Kong."
         },
         {
             "path": "IMG_0118.JPG",
@@ -89,7 +58,7 @@
         },
         {
             "path": "IMG_0147.JPG",
-            "description": "The symbol of Hong Kong"
+            "description": "The symbol of Hong Kong."
         },
         {
             "path": "IMG_0149.JPG",
@@ -109,7 +78,7 @@
         },
         {
             "path": "IMG_0193.JPG",
-            "description": "&quot;Give Way&quot;...must be the British influence"
+            "description": "&quot;Give Way&quot;...must be the British influence."
         },
         {
             "path": "IMG_0195.JPG",
@@ -123,11 +92,11 @@
     "hongKongBBQ": [
         {
             "path": "IMG_0218.JPG",
-            "description": ""
+            "description": "The pre-meal cleaning ritual!"
         },
         {
             "path": "IMG_0220.JPG",
-            "description": ""
+            "description": "A fried shrimp...with head and eyes in-tact."
         },
         {
             "path": "IMG_0222.JPG",
@@ -135,7 +104,7 @@
         },
         {
             "path": "IMG_0224.JPG",
-            "description": ""
+            "description": "Potato skins"
         },
         {
             "path": "IMG_0225.JPG",
@@ -143,7 +112,7 @@
         },
         {
             "path": "IMG_0226.JPG",
-            "description": ""
+            "description": "A hot dog!"
         },
         {
             "path": "IMG_0228.JPG",
@@ -153,33 +122,33 @@
     "hongKongDimSum": [
         {
             "path": "IMG_0164.JPG",
-            "description": ""
+            "description": "Tea for self-cleaning utensils."
         },
         {
             "path": "IMG_0165.JPG",
-            "description": ""
+            "description": "Tea for drinking."
         },
         {
             "path": "IMG_0168.JPG",
-            "description": ""
+            "description": "The menu."
         },
         {
             "path": "IMG_0169.JPG",
-            "description": ""
+            "description": "The menu."
         },
         {
             "path": "IMG_0170.JPG",
-            "description": ""
+            "description": "Baozi and other goodies"
         }
     ],
     "hongKongJune4Museum": [
         {
             "path": "IMG_0191.JPG",
-            "description": ""
+            "description": "The floor listings for the office building the museum was located in."
         },
         {
             "path": "IMG_0192.JPG",
-            "description": ""
+            "description": "If you take photos in the museum, make sure others are not in the photo! You might not want others to know you went to the museum..."
         }
     ],
     "hongKongSubway": [
@@ -189,7 +158,7 @@
         },
         {
             "path": "IMG_0027.JPG",
-            "description": ""
+            "description": "Pon-Pon's wife, Pon-Pon, and Song Ning (Tracy)."
         },
         {
             "path": "IMG_0030.JPG",
@@ -215,7 +184,7 @@
         },
         {
             "path": "IMG_0111.JPG",
-            "description": ""
+            "description": "Beautiful view of Hong Kong from Trolly, going upwards..."
         },
         {
             "path": "IMG_0113.JPG",
@@ -235,7 +204,7 @@
         },
         {
             "path": "IMG_0127.JPG",
-            "description": ""
+            "description": "From the highest point."
         },
         {
             "path": "IMG_0135.JPG",
@@ -249,7 +218,7 @@
         },
         {
             "path": "IMG_0252.JPG",
-            "description": ""
+            "description": "&quot;Warm Tips&quot;"
         },
         {
             "path": "IMG_0253.JPG",
@@ -269,7 +238,7 @@
         },
         {
             "path": "IMG_0261.JPG",
-            "description": ""
+            "description": "Interesting bark"
         },
         {
             "path": "IMG_0263.JPG",
@@ -309,11 +278,11 @@
         },
         {
             "path": "IMG_0279.JPG",
-            "description": ""
+            "description": "A real peacock for taking pictures with."
         },
         {
             "path": "IMG_0282.JPG",
-            "description": ""
+            "description": "There were plenty of interesting birds in cages throughout the park."
         },
         {
             "path": "IMG_0284.JPG",
@@ -349,21 +318,21 @@
         },
         {
             "path": "IMG_0314.JPG",
-            "description": ""
+            "description": "A mini replica of the Terracota Soldiers!"
         },
         {
             "path": "IMG_0317.JPG",
-            "description": ""
+            "description": "A plaque commemerating a tree planted by Fidel Castro!"
         },
         {
             "path": "IMG_0319.JPG",
-            "description": ""
+            "description": "&quot;Wish your next coming&quot;"
         }
     ],
     "shenzhen": [
         {
             "path": "IMG_0231.JPG",
-            "description": ""
+            "description": "View from Pon-Pon's apartment"
         },
         {
             "path": "IMG_0232.JPG",
@@ -375,11 +344,11 @@
         },
         {
             "path": "IMG_0239.JPG",
-            "description": ""
+            "description": "Apartments"
         },
         {
             "path": "IMG_0241.JPG",
-            "description": ""
+            "description": "&quot;Wash away, before you leaving out!&quot;"
         },
         {
             "path": "IMG_0242.JPG",
@@ -387,26 +356,18 @@
         },
         {
             "path": "IMG_0246.JPG",
-            "description": ""
+            "description": "Jungle"
         },
         {
             "path": "IMG_0325.JPG",
-            "description": ""
+            "description": "They give you plastic gloves so you can eat the greasy chicken with your hands!"
         },
         {
             "path": "IMG_0329.JPG",
-            "description": ""
+            "description": "These dogs look familiar..."
         }
     ],
     "photoShoot": [
-        {
-            "path": "IMG_0004.JPG",
-            "description": "this is description 1"
-        },
-        {
-            "path": "IMG_0005.JPG",
-            "description": "this is description 2"
-        }
     ]
 }
 
