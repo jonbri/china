@@ -72,3 +72,8 @@ header {
     top: 0;
 }
 
+.smalllink {
+    font-size: 12px;
+    color: darkblue;
+    padding-left: 5px;
+}
