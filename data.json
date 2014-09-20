@@ -876,6 +876,164 @@
             "path": "IMG_0639.JPG",
             "description": ""
         }
+    ],
+    "forbiddenCity": [
+        {
+            "path": "DSC00493.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00505.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00506.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00509.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00511.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00519.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00525.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00528.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00534.JPG",
+            "description": ""
+        }
+    ],
+    "taiyuanSupermarket": [
+        {
+            "path": "IMG_0409.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0410.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0413.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0415.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0420.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0524.JPG",
+            "description": ""
+        }
+    ],
+    "tiananmenSquare": [
+        {
+            "path": "DSC00398.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00402.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00408.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00418.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00421.JPG",
+            "description": ""
+        }
+    ],
+    "olympicPark": [
+        {
+            "path": "DSC00427.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00430.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00435.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00441.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00457.JPG",
+            "description": ""
+        }
+    ],
+    "baozi": [
+        {
+            "path": "DSC00129.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00131.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00134.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00138.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00145.JPG",
+            "description": ""
+        }
+    ],
+    "pekingDuck": [
+        {
+            "path": "DSC00483.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00486.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00488.JPG",
+            "description": ""
+        }
+    ],
+    "hotpot": [
+        {
+            "path": "DSC00375.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00377.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00388.JPG",
+            "description": ""
+        }
     ]
 }
 
