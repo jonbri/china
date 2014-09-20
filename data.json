@@ -367,6 +367,48 @@
             "description": "These dogs look familiar..."
         }
     ],
+    "animals": [
+        {
+            "path": "IMG_0366.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0384.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0661.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0667.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0692.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0705.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0708.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0710.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0780.JPG",
+            "description": ""
+        },
+        {
+            "path": "WP_20140903_006.JPG",
+            "description": ""
+        }
+    ],
     "photoShoot": [
     ]
 }
