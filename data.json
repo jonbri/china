@@ -765,7 +765,117 @@
             "description": ""
         }
     ],
+    "wedding": [
+        {
+            "path": "DSC00201.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00203.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00204.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00217.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00224.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00232.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00239.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00251.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00258.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00267.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00283.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00288.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00292.JPG",
+            "description": ""
+        },
+        {
+            "path": "DSC00295.JPG",
+            "description": ""
+        }
+    ],
     "photoShoot": [
+        {
+            "path": "IMG_0531.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0536.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0540.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0545.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0547.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0550.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0553.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0573.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0576.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0604.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0610.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0627.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0639.JPG",
+            "description": ""
+        }
     ]
 }
 
