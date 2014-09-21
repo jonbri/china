@@ -5,10 +5,6 @@
             "description": "The symbol of Hong Kong."
         },
         {
-            "path": "IMG_0007.JPG",
-            "description": "&quot;Please do not feed raises the small birds&quot; This was from a McDonalds in the train station."
-        },
-        {
             "path": "IMG_0014.JPG",
             "description": "In the train station I saw my first true &quot;squatter&quot;."
         },
@@ -243,10 +239,6 @@
             "description": ""
         },
         {
-            "path": "IMG_0252.JPG",
-            "description": "&quot;Warm Tips&quot;"
-        },
-        {
             "path": "IMG_0253.JPG",
             "description": ""
         },
@@ -351,11 +343,6 @@
             "description": "A plaque commemerating a tree planted by Fidel Castro!"
         },
         {
-            "path": "IMG_0319.JPG",
-            "description": "&quot;Wish your next coming&quot;"
-        },
-
-        {
             "path": "DSC00082.JPG",
             "description": ""
         },
@@ -384,10 +371,6 @@
         {
             "path": "IMG_0239.JPG",
             "description": "Apartments"
-        },
-        {
-            "path": "IMG_0241.JPG",
-            "description": "&quot;Wash away, before you leaving out!&quot;"
         },
         {
             "path": "IMG_0242.JPG",
@@ -500,6 +483,30 @@
         {
             "path": "IMG_4559.JPG",
             "description": "Hong Kong had some normal street names"
+        },
+        {
+            "path": "IMG_0007.JPG",
+            "description": "&quot;Please do not feed raises the small birds&quot; This was from a McDonalds in the train station."
+        },
+        {
+            "path": "IMG_0524.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0774.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0252.JPG",
+            "description": "&quot;Warm Tips&quot;"
+        },
+        {
+            "path": "IMG_0319.JPG",
+            "description": "&quot;Wish your next coming&quot;"
+        },
+        {
+            "path": "IMG_0241.JPG",
+            "description": "&quot;Wash away, before you leaving out!&quot;"
         }
     ],
     "taiyuan": [
@@ -840,10 +847,6 @@
             "description": ""
         },
         {
-            "path": "IMG_0774.JPG",
-            "description": ""
-        },
-        {
             "path": "IMG_0776.JPG",
             "description": ""
         },
@@ -1078,10 +1081,6 @@
         {
             "path": "IMG_0420.JPG",
             "description": "Cat food aisle"
-        },
-        {
-            "path": "IMG_0524.JPG",
-            "description": ""
         }
     ],
     "tiananmenSquare": [
