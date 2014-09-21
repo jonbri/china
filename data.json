@@ -1,6 +1,10 @@
 {
     "hongKong": [
         {
+            "path": "IMG_0147.JPG",
+            "description": "The symbol of Hong Kong."
+        },
+        {
             "path": "IMG_0007.JPG",
             "description": "&quot;Please do not feed raises the small birds&quot; This was from a McDonalds in the train station."
         },
@@ -55,10 +59,6 @@
         {
             "path": "IMG_0118.JPG",
             "description": "I learned about &quot;Mr. Happy&quot; and &quot;Little Miss Sunshine&quot; in Kindergarden! They seem to call him &quot;Mr. Man&quot; though..."
-        },
-        {
-            "path": "IMG_0147.JPG",
-            "description": "The symbol of Hong Kong."
         },
         {
             "path": "IMG_0149.JPG",
@@ -441,7 +441,7 @@
         },
         {
             "path": "IMG_0780.JPG",
-            "description": ""
+            "description": "Tracy's favorite"
         },
         {
             "path": "WP_20140903_006.JPG",
@@ -505,23 +505,23 @@
     "taiyuan": [
         {
             "path": "DSC00195.JPG",
-            "description": ""
+            "description": "The apartment that Tracy grew up in."
         },
         {
             "path": "DSC00198.JPG",
-            "description": ""
+            "description": "Tracy's middle school"
         },
         {
             "path": "DSC00199.JPG",
-            "description": ""
+            "description": "Tracy's middle school"
         },
         {
             "path": "IMG_0334.JPG",
-            "description": ""
+            "description": "First meeting between Jonathan and Tracy's Father"
         },
         {
             "path": "IMG_0338.JPG",
-            "description": ""
+            "description": "Home-made chinese grits!"
         },
         {
             "path": "IMG_0353.JPG",
@@ -545,11 +545,11 @@
         },
         {
             "path": "IMG_0394.JPG",
-            "description": ""
+            "description": "Where Tracy's Father works, a factory."
         },
         {
             "path": "IMG_0396.JPG",
-            "description": ""
+            "description": "Bikes you can rent"
         },
         {
             "path": "IMG_0397.JPG",
@@ -573,7 +573,7 @@
         },
         {
             "path": "IMG_0447.JPG",
-            "description": ""
+            "description": "Entrance to the food street"
         },
         {
             "path": "IMG_0449.JPG",
@@ -581,7 +581,7 @@
         },
         {
             "path": "IMG_0451.JPG",
-            "description": ""
+            "description": "Food street"
         },
         {
             "path": "IMG_0456.JPG",
@@ -597,7 +597,7 @@
         },
         {
             "path": "IMG_0487.JPG",
-            "description": ""
+            "description": "Making Shanxi noodles"
         },
         {
             "path": "IMG_0493.JPG",
@@ -605,7 +605,7 @@
         },
         {
             "path": "IMG_0511.JPG",
-            "description": ""
+            "description": "Making popcorn the old way"
         },
         {
             "path": "IMG_0522.JPG",
@@ -613,7 +613,7 @@
         },
         {
             "path": "IMG_0682.JPG",
-            "description": ""
+            "description": "At Pizza Hut!"
         },
         {
             "path": "IMG_0684.JPG",
@@ -629,7 +629,7 @@
         },
         {
             "path": "IMG_0719.JPG",
-            "description": ""
+            "description": "My home-away-from-home"
         },
         {
             "path": "IMG_0720.JPG",
@@ -637,7 +637,7 @@
         },
         {
             "path": "IMG_0721.JPG",
-            "description": ""
+            "description": "Yes, corn in the pizza."
         },
         {
             "path": "IMG_0726.JPG",
@@ -645,11 +645,11 @@
         },
         {
             "path": "IMG_0740.JPG",
-            "description": ""
+            "description": "The duck neck mascot!"
         },
         {
             "path": "IMG_0744.JPG",
-            "description": ""
+            "description": "At the annual noodle festival"
         },
         {
             "path": "IMG_0786.JPG",
@@ -657,7 +657,7 @@
         },
         {
             "path": "WP_20140902_002.jpg",
-            "description": ""
+            "description": "Riding a rental bike"
         },
         {
             "path": "IMG_0724.JPG",
@@ -665,23 +665,23 @@
         },
         {
             "path": "IMG_0735.JPG",
-            "description": ""
+            "description": "A german bar"
         },
         {
             "path": "IMG_0810.JPG",
-            "description": ""
+            "description": "Tracy and Pon-Pon at their old middle school"
         },
         {
             "path": "IMG_0859.JPG",
-            "description": ""
+            "description": "You have to your age in dumplings before your wedding day"
         },
         {
             "path": "IMG_0882.JPG",
-            "description": ""
+            "description": "The whole family at Pizza Hut!"
         },
         {
             "path": "IMG_0889.JPG",
-            "description": ""
+            "description": "Private Tai Chi lessons!"
         }
     ],
     "tokyo": [
@@ -699,7 +699,7 @@
         },
         {
             "path": "DSC00548.JPG",
-            "description": ""
+            "description": "In front of the Japan Imperial Palace"
         },
         {
             "path": "DSC00549.JPG",
@@ -715,11 +715,11 @@
         },
         {
             "path": "DSC00568.JPG",
-            "description": ""
+            "description": "Night-view from the Tokyo Tower"
         },
         {
             "path": "DSC00581.JPG",
-            "description": ""
+            "description": "Night-view from the Tokyo Tower"
         },
         {
             "path": "DSC00588.JPG",
@@ -731,19 +731,19 @@
         },
         {
             "path": "DSC00596.JPG",
-            "description": ""
+            "description": "Tokyo Tower"
         },
         {
             "path": "DSC00601.JPG",
-            "description": ""
+            "description": "At a cool noodle vending machine."
         },
         {
             "path": "DSC00602.JPG",
-            "description": ""
+            "description": "Everything is small...even the staircases!"
         },
         {
             "path": "IMG_4638.JPG",
-            "description": ""
+            "description": "Red-light district"
         },
         {
             "path": "IMG_4639.JPG",
@@ -771,7 +771,7 @@
         },
         {
             "path": "IMG_1205.JPG",
-            "description": ""
+            "description": "An interesting pedestrian crossing!"
         },
         {
             "path": "IMG_1206.JPG",
@@ -779,7 +779,7 @@
         },
         {
             "path": "IMG_1207.JPG",
-            "description": ""
+            "description": "Part of the subway was for woman only during the peak hour."
         },
         {
             "path": "IMG_1260.JPG",
@@ -787,7 +787,7 @@
         },
         {
             "path": "IMG_1274.JPG",
-            "description": ""
+            "description": "We had too many suitcases!"
         }
     ],
     "taiyuanPark": [
@@ -805,7 +805,7 @@
         },
         {
             "path": "DSC00169.JPG",
-            "description": ""
+            "description": "Tracy visited this spot when she was a little girl"
         },
         {
             "path": "IMG_0750.JPG",
@@ -899,7 +899,7 @@
         },
         {
             "path": "DSC00288.JPG",
-            "description": ""
+            "description": "Tracy in her Bridal Sedan Chair"
         },
         {
             "path": "DSC00292.JPG",
@@ -915,7 +915,7 @@
         },
         {
             "path": "IMG_0878.JPG",
-            "description": ""
+            "description": "The stage, right before the ceremony"
         }
     ],
     "photoShoot": [
@@ -1065,11 +1065,11 @@
         },
         {
             "path": "IMG_0410.JPG",
-            "description": ""
+            "description": "Live turtles for your turtle soup!"
         },
         {
             "path": "IMG_0413.JPG",
-            "description": ""
+            "description": "A huge fish"
         },
         {
             "path": "IMG_0415.JPG",
@@ -1077,7 +1077,7 @@
         },
         {
             "path": "IMG_0420.JPG",
-            "description": ""
+            "description": "Cat food aisle"
         },
         {
             "path": "IMG_0524.JPG",
@@ -1109,11 +1109,11 @@
     "olympicPark": [
         {
             "path": "DSC00427.JPG",
-            "description": ""
+            "description": "M for Mimi"
         },
         {
             "path": "DSC00430.JPG",
-            "description": ""
+            "description": "The main stadium (The Bird Nest)"
         },
         {
             "path": "DSC00435.JPG",
@@ -1121,11 +1121,11 @@
         },
         {
             "path": "DSC00441.JPG",
-            "description": ""
+            "description": "The torch"
         },
         {
             "path": "DSC00457.JPG",
-            "description": ""
+            "description": "The aquatic center (water cubic)"
         }
     ],
     "baozi": [
@@ -1153,7 +1153,7 @@
     "pekingDuck": [
         {
             "path": "DSC00483.JPG",
-            "description": ""
+            "description": "It takes great skill to be able to carve a duck"
         },
         {
             "path": "DSC00486.JPG",
@@ -1175,7 +1175,7 @@
         },
         {
             "path": "DSC00388.JPG",
-            "description": ""
+            "description": "A seseme-sauce base"
         }
     ],
     "professional": [
