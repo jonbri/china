@@ -1247,23 +1247,7 @@
     ],
     "professional": [
         {
-            "path": "103.jpg",
-            "description": ""
-        },
-        {
-            "path": "104.jpg",
-            "description": ""
-        },
-        {
-            "path": "107.jpg",
-            "description": ""
-        },
-        {
             "path": "123.jpg",
-            "description": ""
-        },
-        {
-            "path": "128.jpg",
             "description": ""
         },
         {
@@ -1275,59 +1259,11 @@
             "description": ""
         },
         {
-            "path": "13.jpg",
-            "description": ""
-        },
-        {
-            "path": "155.jpg",
-            "description": ""
-        },
-        {
-            "path": "156.jpg",
-            "description": ""
-        },
-        {
-            "path": "157.jpg",
-            "description": ""
-        },
-        {
             "path": "158.jpg",
             "description": ""
         },
         {
-            "path": "159.jpg",
-            "description": ""
-        },
-        {
-            "path": "160.jpg",
-            "description": ""
-        },
-        {
             "path": "161.jpg",
-            "description": ""
-        },
-        {
-            "path": "162.jpg",
-            "description": ""
-        },
-        {
-            "path": "163.jpg",
-            "description": ""
-        },
-        {
-            "path": "164.jpg",
-            "description": ""
-        },
-        {
-            "path": "165.jpg",
-            "description": ""
-        },
-        {
-            "path": "166.jpg",
-            "description": ""
-        },
-        {
-            "path": "188.jpg",
             "description": ""
         },
         {
@@ -1339,14 +1275,6 @@
             "description": ""
         },
         {
-            "path": "44.jpg",
-            "description": ""
-        },
-        {
-            "path": "47.jpg",
-            "description": ""
-        },
-        {
             "path": "48.jpg",
             "description": ""
         },
@@ -1355,27 +1283,11 @@
             "description": ""
         },
         {
-            "path": "52.jpg",
-            "description": ""
-        },
-        {
-            "path": "57.jpg",
-            "description": ""
-        },
-        {
             "path": "58.jpg",
             "description": ""
         },
         {
-            "path": "59.jpg",
-            "description": ""
-        },
-        {
             "path": "60.jpg",
-            "description": ""
-        },
-        {
-            "path": "62.jpg",
             "description": ""
         },
         {
@@ -1387,19 +1299,7 @@
             "description": ""
         },
         {
-            "path": "77.jpg",
-            "description": ""
-        },
-        {
-            "path": "85.jpg",
-            "description": ""
-        },
-        {
             "path": "86.jpg",
-            "description": ""
-        },
-        {
-            "path": "91.jpg",
             "description": ""
         }
     ],
