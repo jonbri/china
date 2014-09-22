@@ -425,6 +425,10 @@
         {
             "path": "WP_20140903_006.JPG",
             "description": ""
+        },
+        {
+            "path": "IMG_0935.JPG",
+            "description": ""
         }
     ],
     "english": [
@@ -503,6 +507,10 @@
         {
             "path": "IMG_0241.JPG",
             "description": "&quot;Wash away, before you leaving out!&quot;"
+        },
+        {
+            "path": "IMG_0897.JPG",
+            "description": ""
         }
     ],
     "taiyuan": [
@@ -685,6 +693,18 @@
         {
             "path": "IMG_0889.JPG",
             "description": "Private Tai Chi lessons!"
+        },
+        {
+            "path": "IMG_0893.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0895.JPG",
+            "description": ""
+        },
+        {
+            "path": "PizzaHut_Menu.JPG",
+            "description": ""
         }
     ],
     "tokyo": [
@@ -791,6 +811,14 @@
         {
             "path": "IMG_1274.JPG",
             "description": "We had too many suitcases!"
+        },
+        {
+            "path": "Japan_Toilet.JPG",
+            "description": ""
+        },
+        {
+            "path": "Tokyo_Noodle_Vending.JPG",
+            "description": ""
         }
     ],
     "taiyuanPark": [
@@ -1095,6 +1123,58 @@
         {
             "path": "DSC00418.JPG",
             "description": ""
+        },
+        {
+            "path": "IMG_0901.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0903.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0904.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0906.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0908.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0909.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0911.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0918.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0919.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0921.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0939.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0942.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0944.JPG",
+            "description": ""
         }
     ],
     "olympicPark": [
@@ -1328,6 +1408,44 @@
         },
         {
             "path": "91.jpg",
+            "description": ""
+        }
+    ],
+    "beijing": [
+        {
+            "path": "IMG_0985.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0986.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0989.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0993.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0995.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0997.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_0999.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_1021a.JPG",
+            "description": ""
+        },
+        {
+            "path": "IMG_2730a.JPG",
             "description": ""
         }
     ]
