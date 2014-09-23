@@ -17,6 +17,17 @@ header {
     padding: 5px;
     margin: 5px;
 }
+.headercontainer {
+    position: relative;
+    width: 100%;
+}
+header span {
+    position: absolute;
+    font-size: 22px;
+    font-family: arial;
+    top: 0;
+    left: 2px;
+}
 header img {
     width: 100%;
 }
