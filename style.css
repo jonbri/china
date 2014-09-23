@@ -1,20 +1,22 @@
 html {
-    border: 2px solid black;
 }
 body {
     background: url("./wallpaper.jpg") repeat fixed center top #F0F0F0;
 }
 .well {
-    border: 2px solid #FFFF00; /* china yellow */
+    border: 2px solid black;
     font-size: 16px;
     clear: both;
 }
+.subwell {
+    margin-top: 5px;
+}
 
 header {
-    border: 2px solid #FFFF00; /* china yellow */
+    /*border: 2px solid #FFFF00;*/ /* china yellow */
     background-color: #FF4500; /* china red */
     text-align: center; 
-    padding: 5px;
+    padding: 3px;
     margin: 5px;
 }
 .pageheader {
