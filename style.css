@@ -17,6 +17,9 @@ header {
     padding: 5px;
     margin: 5px;
 }
+header img {
+    width: 100%;
+}
 
 .tileContainer {
     width: 100%;
