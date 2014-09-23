@@ -28,7 +28,7 @@ __china = {};
         initialize masonry
     */
     function loadTileContainer( sName ) {
-        console.debug('loadTileContainer ' + sName);
+        //console.debug('loadTileContainer ' + sName);
         var oData = data[sName],
             oDoneDeferred = new jQuery.Deferred(),
             $tileContainer = jQuery('.tileContainer', '#' + sName);
@@ -65,7 +65,7 @@ __china = {};
                 .load(function() { 
                     nodeDoneLoading($tile, oDeferred);
                 }).error(function() {
-                    console.debug('error loading image ' + $tile);
+                    //console.debug('error loading image ' + $tile);
                     nodeDoneLoading($tile, oDeferred);
                 }).attr("src", $img.attr("src"))
             ;
@@ -87,7 +87,7 @@ __china = {};
                 iterTile = aTiles[i];
                 var oldHeight = iterTile.attr('__lastheight');
                 if( Number(oldHeight) !== iterTile.height() ) {
-                    console.debug(sName + '. ' + $('img', iterTile).attr('src') + ' calling layout' + new Date() + '. oldHeight: ' + Number(oldHeight) + '. iterTile.height(): ' + iterTile.height());
+                    //console.debug(sName + '. ' + $('img', iterTile).attr('src') + ' calling layout' + new Date() + '. oldHeight: ' + Number(oldHeight) + '. iterTile.height(): ' + iterTile.height());
                     msnry.layout();
                     break;
                 }
