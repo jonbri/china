@@ -17,6 +17,19 @@ header {
     padding: 5px;
     margin: 5px;
 }
+.pageheader {
+}
+.pageheader h1 {
+    float: right;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.pageheader aside {
+    float: left;
+}
+
 .headercontainer {
     position: relative;
     width: 100%;
